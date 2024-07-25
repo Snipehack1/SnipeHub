@@ -31,6 +31,8 @@ Section:NewButton("Copper TP", "Copper", function()
 end)
 
 Section:NewButton("Silver TP", "Silver", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(731.282471, -4.10044432, 990.031982, 0.464334339, -4.54426505e-08, -0.885659993, 4.14546761e-08, 1, -2.95754798e-08, 0.885659993, -2.29818369e-08, 0.464334339)
+    wait(0.3)
    local silverore = game.workspace.System_Interactive_World.Harvestables.Plains.Ores.Silver
    if silverore then
     for _, Silver in ipairs(silverore:GetChildren()) do
@@ -41,8 +43,10 @@ Section:NewButton("Silver TP", "Silver", function()
 end)
 
 Section:NewButton("Gold TP", "Gold", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2489.75171, 103.204697, 155.899307, -0.128734246, -2.76137762e-08, -0.991679132, -1.00079136e-08, 1, -2.65463029e-08, 0.991679132, 6.50722098e-09, -0.128734246)
+    wait(0.3)
     local GoldOre = game.workspace.System_Interactive_World.Harvestables.Desert.Ores.Gold
-
+   
     if GoldOre then
         for _, Gold in ipairs(GoldOre:GetChildren()) do
        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Gold["Gold Node"].Position)
@@ -51,6 +55,8 @@ Section:NewButton("Gold TP", "Gold", function()
 end)
 
 Section:NewButton("Obsidian TP", "Obsidian", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-820.787292, -27.1648331, -710.836914, -0.0444134325, 3.38488029e-08, -0.999013245, 8.97682995e-09, 1, 3.34831505e-08, 0.999013245, -7.48087103e-09, -0.0444134325)
+    wait(0.3)
     local ObsidianOre = game.workspace.System_Interactive_World.Harvestables.Volcano.Ores.Obsidian
     if ObsidianOre then
       for _, Obsidian in ipairs(ObsidianOre:GetChildren()) do
@@ -61,6 +67,8 @@ Section:NewButton("Obsidian TP", "Obsidian", function()
 end)
 
 Section:NewButton("Sapphire TP", "Sapphire", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-918.415955, -74.9649582, 1772.95166, -0.00120420824, 2.114054e-08, -0.999999285, 1.27329258e-11, 1, 2.114054e-08, 0.999999285, 1.27329258e-11, -0.00120420824)
+    wait(0.3)
     local SapphireOre = game.workspace.System_Interactive_World.Harvestables.Arctic.Ores.Sapphire
 
     if SapphireOre then
@@ -72,6 +80,8 @@ Section:NewButton("Sapphire TP", "Sapphire", function()
 end)
 
 Section:NewButton("Emerald TP", "Emerald", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2694.59644, -16.2930756, 2202.53223, 0.0479971133, -2.02715196e-08, 0.998847485, 4.17060919e-09, 1, 2.00945021e-08, -0.998847485, 3.20132432e-09, 0.0479971133)
+    wait(0.3)
    local EmeraldOre = game.workspace.System_Interactive_World.Harvestables.Forest.Ores.Emerald
 
    if EmeraldOre then
