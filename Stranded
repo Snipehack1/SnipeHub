@@ -1,0 +1,130 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SnipeHub V1", "Ocean")
+local Tab = Window:NewTab("Stranded")
+local Tab2 = Window:NewTab("Misc")
+local Section = Tab:NewSection("Ore TP")
+local Section3 = Tab:NewSection("TP")
+local Section2 = Tab2:NewSection("Misc")
+
+
+
+
+Section:NewButton("Stone TP", "Stone", function()
+local StoneRocks = game.workspace.System_Interactive_World.Harvestables.Plains.Rocks["Large Granite Rocks"]
+    if StoneRocks then
+
+        for _, Stone in ipairs(StoneRocks:GetChildren()) do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Stone.Rocks.Position)
+    end
+    end
+end)
+
+Section:NewButton("Copper TP", "Copper", function()
+    local CopperORE = game.workspace.System_Interactive_World.Harvestables.Plains.Ores.Copper
+    if CopperORE then
+     for _, Copper in ipairs(CopperORE:GetChildren()) do
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Copper["Copper Node"].Position)
+    end
+
+    end
+
+end)
+
+Section:NewButton("Silver TP", "Silver", function()
+   local silverore = game.workspace.System_Interactive_World.Harvestables.Plains.Ores.Silver
+   if silverore then
+    for _, Silver in ipairs(silverore:GetChildren()) do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Silver["Silver Node"].Position)
+   end
+   end
+
+end)
+
+Section:NewButton("Gold TP", "Gold", function()
+    local GoldOre = game.workspace.System_Interactive_World.Harvestables.Desert.Ores.Gold
+
+    if GoldOre then
+        for _, Gold in ipairs(GoldOre:GetChildren()) do
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Gold["Gold Node"].Position)
+    end
+    end
+end)
+
+Section:NewButton("Obsidian TP", "Obsidian", function()
+    local ObsidianOre = game.workspace.System_Interactive_World.Harvestables.Volcano.Ores.Obsidian
+    if ObsidianOre then
+      for _, Obsidian in ipairs(ObsidianOre:GetChildren()) do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Obsidian["Obsidian Node"].Position)
+    end
+
+    end
+end)
+
+Section:NewButton("Sapphire TP", "Sapphire", function()
+    local SapphireOre = game.workspace.System_Interactive_World.Harvestables.Arctic.Ores.Sapphire
+
+    if SapphireOre then
+       for _, Sapphire in ipairs(SapphireOre:GetChildren()) do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Sapphire["Sapphire Node"].Position)
+    end
+    end
+
+end)
+
+Section:NewButton("Emerald TP", "Emerald", function()
+   local EmeraldOre = game.workspace.System_Interactive_World.Harvestables.Forest.Ores.Emerald
+
+   if EmeraldOre then
+   for _, Emerald in ipairs(EmeraldOre:GetChildren()) do
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Emerald["Emerald Node"].Position)
+   end
+   end
+end)
+
+Section3:NewButton("TP SAFEZONE", "Player Tp to SafeZone To Not die", function()
+    local rootpart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+    if rootpart then
+    
+    rootpart.CFrame = CFrame.new(-531.720093, 10.8807545, 719.111877, 0.999958038, 4.64498271e-08, 0.00915889442, -4.56606273e-08, 1, -8.63766942e-08, -0.00915889442, 8.59548663e-08, 0.999958038)
+    end
+
+end)
+
+Section2:NewSlider("WalkSpeed", "Sets WalkSpeed Dont press Shift", 2500, 0, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section3:NewButton("The Trundra TP", "The Trundra", function()
+   local Therootpart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
+   if Therootpart then
+    Therootpart.CFrame = CFrame.new(-1031.24365, 13.0350494, 1937.47156, -0.125746027, -5.61389015e-08, -0.992062449, -4.94735897e-09, 1, -5.59609816e-08, 0.992062449, -2.12878248e-09, -0.125746027)
+   end
+end)
+
+Section3:NewButton("Volcano TP", "VolCano", function()
+ local TheVolrootpart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
+   if TheVolrootpart then
+    TheVolrootpart.CFrame = CFrame.new(-763.829163, -6.96587706, -679.322021, 0.999405265, 3.57234491e-08, 0.034483593, -3.6249439e-08, 1, 1.46281698e-08, -0.034483593, -1.586948e-08, 0.999405265)
+   end
+end)
+
+Section3:NewButton("Forest TP", "Forest", function()
+ local TheVolrootpartForest = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
+   if TheVolrootpartForest then
+    TheVolrootpartForest.CFrame = CFrame.new(2006.64819, 117.035042, 2250.89185, 0.533123791, 2.27703421e-08, -0.846037269, -4.78635309e-09, 1, 2.38980302e-08, 0.846037269, -8.69117578e-09, 0.533123791)
+   end
+end)
+
+Section3:NewButton("Desert TP", "Desert", function()
+ local TheVolrootpartForestD = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
+   if TheVolrootpartForestD then
+    TheVolrootpartForestD.CFrame = CFrame.new(2381.50659, 41.8643684, 316.079376, 0.548182964, 5.24092281e-09, 0.836358428, 5.86773794e-08, 1, -4.47258728e-08, -0.836358428, 7.35932844e-08, 0.548182964)
+   end
+end)
+
+Section3:NewButton("Sky Island TP", "Sky Island", function()
+ local TheVolrootpartForestDSky = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") 
+   if TheVolrootpartForestDSky then
+    TheVolrootpartForestDSky.CFrame = CFrame.new(1211.27344, 564.840759, 410.630859, -0.239726827, 6.48554419e-08, 0.970840394, 3.79554299e-09, 1, -6.58661818e-08, -0.970840394, -1.21050245e-08, -0.239726827)
+   end
+end)
